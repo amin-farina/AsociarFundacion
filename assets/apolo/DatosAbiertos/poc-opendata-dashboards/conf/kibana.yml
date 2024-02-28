@@ -1,0 +1,4 @@
+elasticsearch.ssl.verificationMode: none
+elasticsearch.hosts: ["http://es:9200"]
+# server.host: 192.168.0.176
+server.host: "0.0.0.0"

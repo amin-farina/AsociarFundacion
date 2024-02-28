@@ -1,0 +1,95 @@
+version: '3'
+
+services:
+
+  database:
+    container_name: database
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - DB_ANON_ROLE=${DB_ANON_ROLE}
+      - DB_SCHEMA=${DB_SCHEMA}
+    volumes:
+      # anything in initdb directory is created in the database
+      # see "How to extend this image" section at https://hub.docker.com/r/_/postgres/
+      - "./initdb:/docker-entrypoint-initdb.d"
+    networks:
+      - poc
+    restart: always
+
+  ### Test application
+  # postgrest:
+  #   container_name: postgrest
+  #   image: nginx:mainline-alpine
+  #   ports:
+  #     - "8888:80"
+  #   volumes:
+  #     # anything in html directory is hosted via nginx
+  #     - "./html:/usr/share/nginx/html"
+  #   restart: always
+
+  postgrest:
+    container_name: postgrest
+    image: postgrest/postgrest:latest
+    ports:
+      - "3000:3000"
+    # Available environment variables documented here:
+    # https://postgrest.org/en/latest/configuration.html#environment-variables
+    environment:
+      # The standard connection URI format, documented at
+      # https://www.postgresql.org/docs/current/static/libpq-connect.html#LIBPQ-CONNSTRING
+      - PGRST_DB_URI=postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@database:5432/${POSTGRES_DB}
+      # The name of which database schema to expose to REST clients
+      - PGRST_DB_SCHEMA=${DB_SCHEMA}
+      # The database role to use when no client authentication is provided
+      - PGRST_DB_ANON_ROLE=${DB_ANON_ROLE}
+      # Overrides the base URL used within the OpenAPI self-documentation hosted at the API root path
+      - PGRST_OPENAPI_SERVER_PROXY_URI=http://localhost:3000
+    networks:
+      - poc
+    restart: always
+    depends_on:
+      - database
+
+  # https://www.metabase.com/docs/latest/installation-and-operation/running-metabase-on-docker
+  metabase:
+    image: metabase/metabase:latest
+    container_name: metabase
+    hostname: metabase
+    volumes:
+      - /dev/urandom:/dev/random:ro
+    ports:
+      - 3333:3000
+    environment:
+      MB_DB_TYPE: postgres
+      MB_DB_DBNAME: postgres
+      MB_DB_PORT: 5432
+      MB_DB_USER_FILE: /run/secrets/db_user
+      MB_DB_PASS_FILE: /run/secrets/db_password
+      MB_DB_HOST: database
+    networks:
+      - poc
+    secrets:
+      - db_password
+      - db_user
+    healthcheck:
+      test: curl --fail -I http://localhost:3000/api/health || exit 1
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    depends_on:
+      - database
+
+networks:
+  poc:
+    driver: bridge
+
+secrets:
+  db_password:
+    file: .db_pass
+  db_user:
+    file: .db_user

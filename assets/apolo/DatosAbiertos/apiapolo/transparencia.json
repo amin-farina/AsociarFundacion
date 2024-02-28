@@ -1,0 +1,12 @@
+{
+  "year": 2022,
+  "item": {
+    "indice": 0.1,
+    "codigo": "BA",
+    "presupuesto": 100000,
+    "gastoDia": 1999,
+    "gastoHora": 19,
+    "gastoHabitante": 1,
+    "gastoLegislador": 100
+  }
+}
