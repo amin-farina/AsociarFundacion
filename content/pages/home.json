@@ -1,0 +1,55 @@
+{
+  "header": {
+    "title": "Transformando realidades",
+    "description": "Somos una ONG sin fines de lucro que busca acompañar y potenciar emprendimientos socioproductivos existentes en barrios vulnerables de la provincia de Buenos Aires y CABA a partir de tres ejes: integración económica, integración social e integración productiva.",
+    "img": "/headerImg.jpg"
+  },
+  "about": {
+    "title": "¿Cómo trabajamos?",
+    "subtitle": "Acerca de Nosotros",
+    "description": "A partir de la generación de confianza y de vínculos sólidos en cada territorio. Para poder transformar la realidad, primero hay que conocerla, caminarla, “patearla” y, por eso, desde el primer día apostamos a la cercanía territorial y al contacto directo con el vecino.",
+    "carrousel": [
+      {
+        "imgPath": "/aboutImg-0.jpeg",
+        "imgAlt": "Acerca de Nosotros"
+      },
+      {
+        "imgPath": "/aboutImg-1.jpg",
+        "imgAlt": "Acerca de Nosotros 2"
+      },
+      {
+        "imgPath": "/aboutImg-2.jpeg",
+        "imgAlt": "Acerca de Nosotros 3"
+      }
+    ]
+  },
+  "helpUs": {
+    "title": "¿Cómo podes ayudarnos?",
+    "description": "",
+    "options": [
+      {
+        "title": "Comunidad",
+        "description": "Inscribite como voluntario y empezá a ser parte de este equipo que está transformando realidades. Completá el formulario.",
+        "textButton": "Sumate",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfxBhMa3thDHpZ1UdkwSpByv8Q7jxn-xIPKbYEhDR8BaclvNQ/viewform?usp=sf_link"
+      },
+      {
+        "title": "Doná ahora",
+        "description": "Con tu aporte contribuís al fortalecimiento de nuestros proyectos socioproductivos y de nuestras campañas.",
+        "textButton": "Donar",
+        "link": "https://donaronline.org/asoci-ar/comunidad-asociar"
+      },
+      {
+        "title": "Alianzas",
+        "description": "Si sos parte de una empresa que quiere involucrarse, contactanos! Juntos podemos generar más y mejores oportunidades.",
+        "textButton": "Escribinos",
+        "link": "/contacto"
+      }
+    ]
+  },
+  "alianzas": {
+    "title": "Alianzas Estratégicas",
+    "description": "Gracias a todas las empresas que confían en nosotros y que son parte fundamental de cada una de nuestras acciones.",
+    "descriptionBold": "¡Gracias por acompañarnos a transformar realidades!"
+  }
+}

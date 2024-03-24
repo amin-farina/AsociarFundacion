@@ -2,32 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+li {
+  list-style:none
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.facebook {
+  background-color: #3b5998 ;
+}
+
+.facebook:hover {
+  background-color: #527bd1 ;
+}
+
+.instagram {
+  background: linear-gradient(to top left, #515bd4, #8134af, #dd2a7b, #feda77, #f58529);
+}
+
+.instagram:hover {
+  background: linear-gradient(to top left,#dd2a7b, #feda77,  #f58529, #515bd4, #8134af);
+}
+
+.instagram .fa-brands {
+  font-weight: 800;
+}
+
+.fa-brands {
+  color: #e4e4e4;
+  font-weight: 500;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.linkedin {
+  background-color: #0e76a8;
+}
+
+.linkedin:hover {
+  background-color: #0b6691;
+}
+
+
+
+
+/* SLIDER  */
+
+@keyframes slide {
+  0% {
+    transform: translateX(0vw);
+  }
+  20% {
+      transform: translateX(0vw);
+  } 
+  40% {
+    transform: translateX(-40vw);
+  }
+  60% {
+    transform: translateX(-40vw);
+  }
+  80% {
+    transform: translateX(-80vw);
+  }
+  100% {
+    transform: translateX(-80vw);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+.sliderClass {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  max-height: 50vh; 
+  border-radius: 20px;
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.animate-slide {
+  max-height: 50vh;
+  display: flex;
+  width: 120vw;
+  animation: slide 10s linear infinite;
+}
+
+
+
+/* Marcas */
+
+.imgLogos {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
 }

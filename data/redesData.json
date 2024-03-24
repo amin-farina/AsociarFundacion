@@ -1,0 +1,7 @@
+{
+    "links" : [
+        {"title": "Facebook", "classIcon" : "fa-brands fa-facebook", "link": "https://www.facebook.com/AsociacionAsociar", "color": "facebook"},
+        {"title": "Instagram", "classIcon" : "fa-brands fa-instagram", "link": "https://www.instagram.com/asoci.ar/", "color": "instagram"},
+        {"title": "Linkedin", "classIcon" : "fa-brands fa-linkedin", "link": "https://www.linkedin.com/feed/", "color": "linkedin"}
+    ]
+}

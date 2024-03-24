@@ -1,0 +1,191 @@
+{
+    "header": {
+        "title" : "Transformando Realidades",
+        "description" : "Somos una ONG sin fines de lucro que busca acompañar y potenciar emprendimientos socioproductivos existentes en barrios vulnerables de la provincia de Buenos Aires y CABA a partir de tres ejes: integración económica, integración social e integración productiva.",
+        "img": "/assets/img/home/headerImg.jpg"
+    },
+    "about": {
+        "title" : "¿Cómo trabajamos?",
+        "subtitle" : "Acerca de Nosotros",
+        "description" : "A partir de la generación de confianza y de vínculos sólidos en cada territorio. Para poder transformar la realidad, primero hay que conocerla, caminarla, “patearla” y, por eso, desde el primer día apostamos a la cercanía territorial y al contacto directo con el vecino.",
+        "carrousel" : [
+            {
+                "imgPath" : "/assets/img/home/aboutImg-0.jpeg",
+                "imgAlt" : "Fundacion Asociar"
+            },
+            {
+                "imgPath" : "/assets/img/home/aboutImg-1.jpg",
+                "imgAlt" : "Fundacion Asociar"
+            },
+            {
+                "imgPath" : "/assets/img/home/aboutImg-2.jpeg",
+                "imgAlt" : "Fundacion Asociar"
+            }
+        ]
+    },
+    "helpUs": {
+        "title" : "¿Cómo podes ayudarnos?",
+        "description" : "",
+        "options" : [
+            {
+                "title": "Comunidad",
+                "description": "Inscribite como voluntario y empezá a ser parte de este equipo que está transformando realidades. Completá el formulario.",
+                "textButton": "Sumate",
+                "link": "https://docs.google.com/forms/d/e/1FAIpQLSfxBhMa3thDHpZ1UdkwSpByv8Q7jxn-xIPKbYEhDR8BaclvNQ/viewform?usp=sf_link"
+            },
+            {
+                "title": "Doná ahora",
+                "description": "Con tu aporte contribuís al fortalecimiento de nuestros proyectos socioproductivos y de nuestras campañas.",
+                "textButton": "Donar",
+                "link": "https://donaronline.org/asoci-ar/comunidad-asociar"
+            },
+            {
+                "title": "Alianzas",
+                "description": "Si sos parte de una empresa que quiere involucrarse, contactanos! Juntos podemos generar más y mejores oportunidades.",
+                "textButton": "Escribinos",
+                "link": "/contacto"
+            }
+        ]
+    },
+    "alianzas": {
+        "title": "Alianzas Estratégicas",
+        "description": "Gracias a todas las empresas que confían en nosotros y que son parte fundamental de cada una de nuestras acciones.",
+        "descriptionBold" : "¡Gracias por acompañarnos a transformar realidades!",
+        "companies": [
+            {
+                "imgPath" : "./assets/img/marcas/rotary.png",
+                "imgAlt" : "Rotary",
+                "imgUrl" : ""
+            },
+            {
+                "imgPath" : "./assets/img/marcas/rotary.png",
+                "imgAlt" : "Stone",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/nilus.png",
+                "imgAlt" : "Nilus",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/wework.png",
+                "imgAlt" : "Wework",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/aktiol.png",
+                "imgAlt" : "Aktiol",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/rotary.png",
+                "imgAlt" : "Algo",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/aysa.png",
+                "imgAlt" : "Aysa",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/rotary.png",
+                "imgAlt" : "Trigo",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/autosigloToyota.png",
+                "imgAlt" : "Autosiglo Toyota",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/solidagro.jpg",
+                "imgAlt" : "Solidagro",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/porta.png",
+                "imgAlt" : "Porta",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/navarroAche.jpg",
+                "imgAlt" : "Navarro Ache",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/wincs.png",
+                "imgAlt" : "Winxs",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/rotary.png",
+                "imgAlt" : "PMD",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/Coca-Cola.png",
+                "imgAlt" : "Coca Cola",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/barugel.jpg",
+                "imgAlt" : "Barugel",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/transclor.jpg",
+                "imgAlt" : "Transclor",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/andreani.svg",
+                "imgAlt" : "Andreani",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/rotary.png",
+                "imgAlt" : "Sr Trupex",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/massive.png",
+                "imgAlt" : "Massive",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/georgalos.png",
+                "imgAlt" : "Georgalos",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/giotto.png",
+                "imgAlt" : "Giotto",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/rotary.png",
+                "imgAlt" : "Nose",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/colorshop.png",
+                "imgAlt" : "ColorShop",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/absurda.jpeg",
+                "imgAlt" : "Absurda",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/umbro.png",
+                "imgAlt" : "Umbro",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/fabric.jpg",
+                "imgAlt" : "Fabric",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/gatorade.jpg",
+                "imgAlt" : "Gatorade",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/ford.jpg",
+                "imgAlt" : "Ford",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/pastalinda.png",
+                "imgAlt" : "PastaLinda",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/zafran.png",
+                "imgAlt" : "Zafran",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/skycolor.jpg",
+                "imgAlt" : "SkyColor Impresion digital",
+                "imgUrl" : ""
+            },{
+                "imgPath" : "./assets/img/marcas/marroncelli.jpg",
+                "imgAlt" : "Marroncelli",
+                "imgUrl" : ""
+            }
+        ]
+    } 
+}

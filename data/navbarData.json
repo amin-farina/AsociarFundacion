@@ -1,0 +1,9 @@
+{
+    "logoPath": "/assets/img/asociar_logo.png",
+    "links" : [
+        {"title": "Inicio", "url": "/"},
+        {"title": "Nosotros", "url": "/nosotros"},
+        {"title": "Líneas de Acción", "url": "/programas"},
+        {"title": "Contacto", "url": "/contacto"}
+    ]
+}
