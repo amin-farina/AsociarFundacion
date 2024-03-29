@@ -1,4 +1,8 @@
-import { defineConfig } from "tinacms";
+import { LocalAuthProvider, defineConfig } from "tinacms";
+import {
+  TinaUserCollection,
+  UsernamePasswordAuthJSProvider,
+} from "tinacms-authjs/dist/tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -7,13 +11,17 @@ const branch =
   process.env.HEAD ||
   "main";
 
+const isLocal = process.env.TINA_PUBLIC_IS_LOCAL === "true";
+
 export default defineConfig({
   branch,
   // Get this from tina.io
   clientId: "b31b24c3-536e-4bcf-8483-a20200e3bad3",
   // Get this from tina.io
   token: "1ab8cac80ab5958e1d7fc6f64e4188ba386baa15",
-
+  authProvider: isLocal
+    ? new LocalAuthProvider()
+    : new UsernamePasswordAuthJSProvider(),
   build: {
     outputFolder: "admin",
     publicFolder: "public",
@@ -26,6 +34,33 @@ export default defineConfig({
   },
   schema: {
     collections: [
+      {
+        ...TinaUserCollection,
+        fields: [
+          {
+            ...TinaUserCollection.fields[0],
+            fields: [
+              {
+                type: "string",
+                label: "Username",
+                name: "username",
+                uid: true,
+                required: true,
+              },
+              {
+                type: "string",
+                label: "Name",
+                name: "name",
+              },
+              {
+                type: "string",
+                label: "Email",
+                name: "email",
+              },
+            ],
+          },
+        ],
+      },
       {
         name: "Home",
         label: "Home",
