@@ -95,4 +95,4 @@ jobs:
         env:
           TINA_PUBLIC_CLIENT_ID: b31b24c3-536e-4bcf-8483-a20200e3bad3
           TINA_TOKEN: 1ab8cac80ab5958e1d7fc6f64e4188ba386baa15
-        run: npx tinacms build
+        run: npm ci && npx tinacms build
